@@ -29,12 +29,12 @@ describe('test/controller/home.test.ts', () => {
     // make request
     // make request
     const result = await createHttpRequest(app)
-      .get('/geturl')
+      .get('/')
       .set('x-timeout', '1000');
 
     // or use assert
     assert.deepStrictEqual(result.status, 200);
-    assert.deepStrictEqual(result.text, 'Hello Midwayjse!');
+    assert.deepStrictEqual(result.text, '//www.baidu.com/img/bd_logo1.png');
 
   });
 
